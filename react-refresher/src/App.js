@@ -1,3 +1,7 @@
+// React
+import React from "react";
+
+// ComponentsP
 import Task from "./components/Task";
 
 const tasks = [
