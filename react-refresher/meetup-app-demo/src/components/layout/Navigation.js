@@ -14,7 +14,7 @@ const NavMenu = styled.nav`
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 10px;
+    gap: 16px;
 
     & > li > a {
       text-decoration: none;
