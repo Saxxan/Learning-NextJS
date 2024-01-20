@@ -6,16 +6,16 @@ import "./index.css";
 
 import App from "./App";
 
-// Pages
-// import AllMeetups from "./pages/AllMeetups";
-// import NewMeetup from "./pages/NewMeetup";
-// import Favorites from "./pages/Favorites";
+// Context
+import { FavoritesContextProvider } from "./store/favorites-context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <FavoritesContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </FavoritesContextProvider>
   </React.StrictMode>
 );

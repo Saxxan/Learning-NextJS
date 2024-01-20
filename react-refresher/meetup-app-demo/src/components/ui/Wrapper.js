@@ -22,5 +22,13 @@ export const CardFooter = styled.footer`
     &:hover {
       background-color: #707cc8;
     }
+
+    &.favorite {
+      background-color: #f9b1b1;
+
+      &:hover {
+        background-color: #c87070;
+      }
+    }
   }
 `;
