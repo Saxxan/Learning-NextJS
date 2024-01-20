@@ -17,6 +17,7 @@ const FavoritesContextProvider = ({ children }) => {
    */
   function addFavoriteMeetupHandler(meetup) {
     setUserFavorites((prevUserFavorites) => {
+      console.log("1");
       return prevUserFavorites.concat(meetup);
     });
   }
