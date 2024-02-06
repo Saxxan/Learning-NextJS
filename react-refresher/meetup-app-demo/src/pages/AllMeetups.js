@@ -118,4 +118,4 @@ function AllMeetups() {
   );
 }
 
-export default AllMeetups;
+export { AllMeetups, AllMeetupsContainer };

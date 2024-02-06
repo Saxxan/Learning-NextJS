@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+
+// Context
+import { FavoritesContext } from "../../store/favorites-context";
 
 // Styled components
 const Header = styled.header`
@@ -26,7 +29,27 @@ const NavMenu = styled.nav`
   }
 `;
 
+const FavNumberComponent = styled.span`
+  margin-left: 4px;
+  color: #fff;
+  background-color: #707cc8;
+  border-radius: 9px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+`;
+
 function Navigation() {
+  const favoritesContext = useContext(FavoritesContext);
+
+  const [favNumber, setFavNumber] = useState(favoritesContext.totalFavorites);
+
+  useEffect(() => {
+    setFavNumber(favoritesContext.totalFavorites);
+  }, [favoritesContext.totalFavorites]);
+
   return (
     <Header>
       <h1>React Meetups</h1>
@@ -39,7 +62,12 @@ function Navigation() {
             <Link to="/new-meetup">New meetup</Link>
           </li>
           <li>
-            <Link to="/favorites">Favorites</Link>
+            <Link to="/favorites">
+              Favorites
+              {favNumber > 0 && (
+                <FavNumberComponent>{favNumber}</FavNumberComponent>
+              )}
+            </Link>
           </li>
         </ul>
       </NavMenu>

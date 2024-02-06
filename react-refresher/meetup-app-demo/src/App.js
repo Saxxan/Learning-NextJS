@@ -1,7 +1,8 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 // Pages
-import AllMeetups from "./pages/AllMeetups";
+import { AllMeetups } from "./pages/AllMeetups";
 import NewMeetup from "./pages/NewMeetup";
 import Favorites from "./pages/Favorites";
 
