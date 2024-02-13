@@ -1,0 +1,27 @@
+.navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menu_item a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
+}
+
+.menu_item a:hover {
+    text-decoration: underline;
+    text-decoration-color: #b03d3d;
+}

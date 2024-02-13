@@ -1,5 +1,10 @@
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
-  return <h1>Hello world</h1>;
+  return (
+    <>
+      <h1>Home</h1>
+    </>
+  );
 }
