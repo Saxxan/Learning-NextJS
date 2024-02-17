@@ -4,7 +4,7 @@
         align-items: center;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 1rem 20px;
+        padding: 12px 16px;
 }
 
 .menu {
@@ -16,12 +16,12 @@
 
 .menu_item a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text);
     transition: color 0.3s ease;
-    font-size: clamp(1rem, 1.3vw, 1.5rem);
+    font-size: clamp(1rem, 0.5rem + 1.3333vw, 1.25rem);
 }
 
 .menu_item a:hover {
     text-decoration: underline;
-    text-decoration-color: #b03d3d;
+    text-decoration-color: var(--primary);
 }
