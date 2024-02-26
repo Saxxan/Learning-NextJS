@@ -15,7 +15,13 @@ function Header() {
     <header className={styles.header}>
       <nav className={styles.navigation}>
         <Link href="/">
-          <Image src={logo} alt="Logo food lover app" width={50} height={50} />
+          <Image
+            src={logo}
+            alt="Logo food lover app"
+            width={50}
+            height={50}
+            priority
+          />
         </Link>
         <ul className={styles.menu}>
           <li className={styles.menu_item}>
