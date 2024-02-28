@@ -1,7 +1,7 @@
 import React from "react";
 
 // Styles
-import styles from "./styles.module.css";
+import styles from "./header.module.css";
 
 // Components
 import Link from "next/link";
@@ -14,15 +14,18 @@ function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.navigation}>
-        <Link href="/">
-          <Image
-            src={logo}
-            alt="Logo food lover app"
-            width={50}
-            height={50}
-            priority
-          />
-        </Link>
+        <div className={styles.logo}>
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="Logo food lover app"
+              width={50}
+              height={50}
+              priority
+            />
+          </Link>
+          <p className={styles.logo_title}>Food lovers app</p>
+        </div>
         <ul className={styles.menu}>
           <li className={styles.menu_item}>
             <Link href="/">Home</Link>

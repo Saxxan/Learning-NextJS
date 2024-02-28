@@ -11,13 +11,16 @@ export default function Home() {
   return (
     <main className="main-content">
       <header className={styles.header}>
-        <section className="">
-          <Image src={heroImage} alt="Hero image" width={500} priority />
+        <section className={styles.image}>
+          <Image src={heroImage} alt="Hero image" width={600} priority />
         </section>
         <section className="">
           <section className={styles.hero}>
             <h1>Para los amantes de la comida</h1>
-            <p>Prueba y comparte comidas de todo el mundo.</p>
+            <p>
+              Bienvenido al universo de las comidas. Prueba y comparte comidas
+              de todas partes del mundo.
+            </p>
           </section>
           <section className={styles.cta}>
             <Link href="/community">Únete a la comunidad</Link>

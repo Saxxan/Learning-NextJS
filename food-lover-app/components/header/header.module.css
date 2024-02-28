@@ -7,6 +7,16 @@
         padding: 12px 16px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo_title {
+    text-transform: uppercase;
+}
+
 .menu {
     list-style: none;
     display: flex;

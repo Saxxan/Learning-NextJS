@@ -1,5 +1,7 @@
 .header {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 3rem;
   margin: 3rem 0;
 }
@@ -7,6 +9,10 @@
 .slideshow {
   width: 40rem;
   height: 25rem;
+}
+
+.image img {
+  border-radius: 20px;
 }
 
 .hero {
@@ -17,8 +23,6 @@
 .hero h1 {
   font-size: 2rem;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.15rem;
   text-transform: uppercase;
   background: linear-gradient(90deg, #f9572a, #ffc905);
   background-clip: text;
@@ -35,9 +39,9 @@
 .cta a {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 0.5rem;
-  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  background: var(--primary);
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
@@ -45,20 +49,20 @@
 
 .cta a:hover,
 .cta a:active {
-  background: linear-gradient(90deg, #fd4715, #f9b241);
+  background: var(--primary);
 }
 
 .cta a:first-child {
   background: transparent;
   font-weight: normal;
-  color: #ff9b05;
-  padding-left: 0;
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .cta a:first-child:hover,
 .cta a:first-child:active {
-  background: transparent;
-  color: #f9b241;
+  background: var(--primary);
+  color: #ffffff;
 }
 
 .section {
